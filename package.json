@@ -1,0 +1,23 @@
+{
+  "name": "figma-js-request-server",
+  "version": "1.0.0",
+  "description": "small server for requesting a file from figma and returning a figma-js response object",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drice89/figma-js-request-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drice89/figma-js-request-server/issues"
+  },
+  "homepage": "https://github.com/drice89/figma-js-request-server#readme",
+  "dependencies": {
+    "figma-js": "^1.11.0"
+  }
+}
