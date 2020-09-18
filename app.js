@@ -6,6 +6,7 @@ const componentProcessor = require('./lib/component-processor.js').componentProc
 const file = 'SxVUDbkV2O49lpsgyyF7Cm'
 
 const parseQuery = (req, res) => {
+  console.log(req)
   res.writeHead(200, {'Content-Type': 'text/html'});
   let q = url.parse(req.url, true).query
   let fileLocation = q.file
@@ -17,6 +18,7 @@ const parseQuery = (req, res) => {
     .then(( { data }) => {
       const rectangle = data.document.children[0].children[0]
       componentProcessor(rectangle)
+      console.log('hello')
       //console.log(rectangle)
       //res.end(JSON.stringify(data.document))
     })
